@@ -84,7 +84,7 @@ export default function Navbar({ locale }) {
         {/* Desktop nav links */}
         <div
           ref={dropdownRef}
-          className="hidden md:flex items-center gap-0.5"
+          className="hidden md:flex items-center gap-1"
         >
           {navLinks.map((link) => (
             <div key={link.key} className="relative">
