@@ -47,7 +47,7 @@ export default async function HomePage({ params: { locale } }) {
   return (
     <>
       {/* ── Hero ── */}
-      <section className="container mx-auto px-4 pt-12 pb-8">
+      <section className="container mx-auto px-4 pt-10 pb-8">
         <div className="w-[88%] mx-auto flex flex-col-reverse md:flex-row items-center gap-10">
 
           {/* Left — text (wider) */}
