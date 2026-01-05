@@ -78,7 +78,7 @@ export default function ContactForm() {
                 onChange={handleChange}
                 placeholder={t('messagePlaceholder')}
                 required
-                rows={5}
+                rows={4}
                 className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm text-dark placeholder:text-gray-400 focus:outline-none focus:border-primary transition-colors resize-none"
               />
             </div>
