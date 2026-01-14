@@ -39,7 +39,7 @@
     to   { clip-path: inset(0 0% 0 0); }
   }
 
-  .news-reveal-ltr { animation: revealLTR 0.55s cubic-bezier(0.4, 0, 0.2, 1) forwards; }
+  .news-reveal-ltr { animation: revealLTR 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards; }
 
   @keyframes bounceRight {
     0%, 100% { transform: translateX(0); }
