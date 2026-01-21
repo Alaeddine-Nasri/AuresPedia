@@ -102,10 +102,10 @@
 
   @keyframes balloonFloat {
     0%   { transform: translateY(0)      translateX(0);     opacity: 0;    }
-    6%   { opacity: 0.6; }
+    6%   { opacity: 0.55; }
     25%  { transform: translateY(-27vh)  translateX(10px);  }
     50%  { transform: translateY(-55vh)  translateX(-8px);  }
-    75%  { transform: translateY(-80vh)  translateX(10px);  opacity: 0.6;  }
+    75%  { transform: translateY(-80vh)  translateX(10px);  opacity: 0.55;  }
     100% { transform: translateY(-110vh) translateX(0);     opacity: 0;    }
   }
 
