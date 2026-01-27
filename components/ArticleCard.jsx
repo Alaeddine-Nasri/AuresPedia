@@ -110,7 +110,7 @@ export default function ArticleCard({
             <h2 className="text-2xl font-bold text-gray-900 mb-4 leading-snug">
               <HighlightTitle title={item.title} />
             </h2>
-            <p className="text-gray-700 text-[0.9375rem] leading-relaxed line-clamp-5 mb-6 text-justify">
+            <p className="text-gray-700 text-[0.9375rem] leading-relaxed line-clamp-4 mb-6 text-justify">
               {excerpt || 'Contenu de l\'article disponible en cliquant sur "Lire la suite".'}
             </p>
             <div className="flex items-center gap-5 flex-wrap">
