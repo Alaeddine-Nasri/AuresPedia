@@ -125,7 +125,7 @@ export default async function HomePage({ params: { locale } }) {
 
       {/* ── About preview (overlapping images + vision/mission) ── */}
       <section className="container mx-auto px-4 py-10">
-        <div className="w-[88%] mx-auto flex flex-col md:flex-row items-center gap-12">
+        <div className="w-[88%] mx-auto flex flex-col md:flex-row items-center gap-10">
 
           {/* Left — overlapping photos (swapped) */}
           <div className="relative flex-shrink-0 w-full md:w-[42%]" style={{ height: '380px' }}>
