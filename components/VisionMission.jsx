@@ -69,7 +69,7 @@ export default function VisionMission({ vision, mission, locale = 'fr' }) {
       {tab === 'vision' ? <VisionIcon /> : <MissionIcon />}
 
       {/* Tabs */}
-      <div className="flex gap-6 mb-2 relative z-10">
+      <div className="flex gap-6 mb-3 relative z-10">
         {['vision', 'mission'].map(t => (
           <button
             key={t}
