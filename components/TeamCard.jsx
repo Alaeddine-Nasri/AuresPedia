@@ -30,7 +30,7 @@ export default function TeamCard({ member, highlighted = false }) {
 
       {/* Floating details card — 3px below photo for normal, near bottom for highlighted */}
       <div
-        className="absolute rounded-xl bg-white shadow-md px-5 py-4"
+        className="absolute rounded-xl bg-white shadow-sm px-5 py-4"
         style={
           highlighted
             ? { left: '4%', right: '4%', bottom: 6 }
