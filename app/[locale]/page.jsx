@@ -94,7 +94,7 @@ export default async function HomePage({ params: { locale } }) {
               />
             </div>
             {/* Floating quote card */}
-            <div className="hidden sm:block absolute bottom-4 right-4 bg-white rounded-2xl shadow-xl p-4 w-72" style={{ minHeight: '140px' }}>
+            <div className="hidden sm:block absolute bottom-4 right-4 bg-white rounded-2xl shadow-xl p-4 w-72" style={{ minHeight: '145px' }}>
               <HeroQuotes quotes={config?.quotes || []} />
             </div>
           </div>
