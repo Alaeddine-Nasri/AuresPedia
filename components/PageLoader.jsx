@@ -33,7 +33,7 @@ export default function PageLoader() {
             position: 'absolute',
             left: '50%',
             bottom: '-60px',
-            fontSize: '52px',
+            fontSize: '48px',
             lineHeight: 1,
             animation: 'loaderBalloonRise 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards',
           }}
