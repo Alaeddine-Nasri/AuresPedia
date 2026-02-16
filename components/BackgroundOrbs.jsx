@@ -63,7 +63,7 @@ export default function BackgroundOrbs() {
           style={{
             position: 'absolute',
             borderRadius: '50%',
-            filter: 'blur(80px)',
+            filter: 'blur(90px)',
             opacity: 0.20,
             ...style,
           }}
