@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aurespedia.univ-batna2.dz/sitemap.xml

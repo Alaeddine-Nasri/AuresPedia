@@ -1,0 +1,108 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "news": "Actualités",
+    "activities": "Activités",
+    "articles": "Articles",
+    "resources": "Ressources",
+    "contact": "Contactez-nous"
+  },
+  "home": {
+    "heroHeadline": "Infos, Services et Ressources.",
+    "heroSubtext": "Votre référence en pédiatrie pour la santé et le bien-être des enfants.",
+    "heroCta": "Contactez-nous",
+    "heroAbout": "À propos de nous",
+    "statsDoctors": "120+ Médecins pour vous",
+    "statsResources": "2000+ Ressources spécialisées",
+    "missionQuote": "À travers notre histoire et nos valeurs, nous mettons la santé et le bien-être des enfants au cœur de toutes nos actions.",
+    "aboutCta": "À propos de nous...",
+    "newsTitle": "Actualités",
+    "newsSubtitle": "Restez informé des dernières nouvelles en pédiatrie.",
+    "newsMore": "Autres actualités →",
+    "activitiesTitle": "Activités",
+    "activitiesIntro": "Participez à des",
+    "activitiesHighlight": "Activités",
+    "activitiesBody": "ludiques et éducatives pensées pour le bien-être et l'épanouissement des enfants.",
+    "activitiesMore": "Voir plus...",
+    "articlesTitle": "Articles",
+    "articlesIntro": "Parce qu'une bonne information est essentielle, retrouvez ici des",
+    "articlesHighlight": "Articles",
+    "articlesBody": "pratiques sur la santé infantile.",
+    "articlesMore": "Autres articles..."
+  },
+  "about": {
+    "breadcrumb": "À propos",
+    "heroTitle": "AuresPédia,",
+    "heroTitleBold": "Plus qu'une mission, une passion.",
+    "historyBreadcrumb": "Histoire",
+    "historyTitle": "Notre",
+    "historyTitleHighlight": "Parcours,",
+    "historyTitleEnd": "pierre après pierre",
+    "teamBreadcrumb": "Équipe",
+    "teamTitle": "Des experts,",
+    "teamTitleEnd": "un seul cœur",
+    "teamMore": "Voir plus..."
+  },
+  "news": {
+    "breadcrumb": "Actualités",
+    "featuredLabel": "À la une",
+    "introIcon": "📢",
+    "introText": "Découvrez les",
+    "introHighlight": "dernières actualités",
+    "introBody": "en pédiatrie et les projets organisés pour les familles.",
+    "readMore": "Lire la suite",
+    "viewMore": "Voir plus"
+  },
+  "activities": {
+    "breadcrumb": "Activités",
+    "upcomingTitle": "Événement à venir",
+    "pastTitle": "Événements passés",
+    "viewAll": "Voir tout...",
+    "readMore": "Lire la suite",
+    "eventLabel": "Événement",
+    "viewMore": "Voir plus"
+  },
+  "articles": {
+    "breadcrumb": "Articles",
+    "viewAll": "Voir tout...",
+    "readMore": "Lire la suite"
+  },
+  "resources": {
+    "comingSoon": "Bientôt disponible"
+  },
+  "contact": {
+    "sectionIntro": "Nous sommes là pour répondre à vos questions et vous accompagner.",
+    "sectionHighlight": "N'hésitez pas à nous écrire ou à passer nous voir !",
+    "name": "Prénom",
+    "namePlaceholder": "Ex. Mohamed NASRI",
+    "email": "Adresse e-mail (*)",
+    "emailPlaceholder": "Ex. nom.prénom@gmail.com",
+    "subject": "Objet de votre demande (*)",
+    "subjectPlaceholder": "Ex. Demande d'information sur les activités ?",
+    "message": "Message (*)",
+    "messagePlaceholder": "Ex. Bonjour, je souhaiterais obtenir plus d'informations sur les activités proposées (dates, inscriptions, âges concernés, etc.). Merci d'avance pour votre aide.",
+    "send": "Envoyer",
+    "success": "Votre message a été envoyé avec succès !",
+    "error": "Une erreur s'est produite. Veuillez réessayer."
+  },
+  "footer": {
+    "question": "Une question ou une idée ?",
+    "questionBody": "Que ce soit pour en savoir plus sur la santé de votre enfant, découvrir nos activités, proposer un partenariat ou organiser un petit événement avec nous, écrivez-nous ! Nous serons heureux de vous répondre et de partager un moment d'échange avec vous.",
+    "dept": "Département de Médecine",
+    "university": "Université de Batna 2"
+  },
+  "common": {
+    "readMore": "Lire la suite",
+    "seeAll": "Voir tout...",
+    "comingSoon": "Bientôt disponible",
+    "home": "Accueil",
+    "backHome": "Retour à l'accueil",
+    "notFound": "Page introuvable",
+    "notFoundText": "La page que vous recherchez n'existe pas.",
+    "published": "Publié le",
+    "by": "Par",
+    "location": "Lieu",
+    "date": "Date"
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "nav": {
+    "home": "الرئيسية",
+    "about": "حول",
+    "news": "الأخبار",
+    "activities": "الأنشطة",
+    "articles": "المقالات",
+    "resources": "الموارد",
+    "contact": "تواصل معنا"
+  },
+  "home": {
+    "heroHeadline": "معلومات، خدمات وموارد.",
+    "heroSubtext": "مرجعكم في طب الأطفال لصحة وسلامة أطفالكم.",
+    "heroCta": "تواصل معنا",
+    "heroAbout": "حول المنصة",
+    "statsDoctors": "+120 طبيب في خدمتكم",
+    "statsResources": "+2000 مورد متخصص",
+    "missionQuote": "من خلال تاريخنا وقيمنا، نضع صحة الأطفال ورفاهيتهم في صميم كل أعمالنا.",
+    "aboutCta": "حول المنصة...",
+    "newsTitle": "الأخبار",
+    "newsSubtitle": "ابقَ على اطلاع بآخر أخبار طب الأطفال.",
+    "newsMore": "أخبار أخرى →",
+    "activitiesTitle": "الأنشطة",
+    "activitiesIntro": "شارك في",
+    "activitiesHighlight": "أنشطة",
+    "activitiesBody": "تعليمية وترفيهية مصممة لرفاهية الأطفال ونموهم.",
+    "activitiesMore": "عرض المزيد...",
+    "articlesTitle": "المقالات",
+    "articlesIntro": "لأن المعلومة الجيدة ضرورية، اعثر هنا على",
+    "articlesHighlight": "مقالات",
+    "articlesBody": "عملية حول صحة الطفل.",
+    "articlesMore": "مقالات أخرى..."
+  },
+  "about": {
+    "breadcrumb": "حول",
+    "heroTitle": "أوريسبيديا،",
+    "heroTitleBold": "أكثر من مهمة، شغف حقيقي.",
+    "historyBreadcrumb": "التاريخ",
+    "historyTitle": "مسيرتنا،",
+    "historyTitleHighlight": "خطوة",
+    "historyTitleEnd": "بعد خطوة",
+    "teamBreadcrumb": "الفريق",
+    "teamTitle": "خبراء،",
+    "teamTitleEnd": "قلب واحد",
+    "teamMore": "عرض المزيد..."
+  },
+  "news": {
+    "breadcrumb": "الأخبار",
+    "featuredLabel": "الأبرز",
+    "introIcon": "📢",
+    "introText": "اكتشف",
+    "introHighlight": "آخر الأخبار",
+    "introBody": "في طب الأطفال والمشاريع المنظمة للعائلات.",
+    "readMore": "اقرأ المزيد",
+    "viewMore": "عرض المزيد"
+  },
+  "activities": {
+    "breadcrumb": "الأنشطة",
+    "upcomingTitle": "الحدث القادم",
+    "pastTitle": "الأحداث السابقة",
+    "viewAll": "عرض الكل...",
+    "readMore": "اقرأ المزيد",
+    "eventLabel": "حدث",
+    "viewMore": "عرض المزيد"
+  },
+  "articles": {
+    "breadcrumb": "المقالات",
+    "viewAll": "عرض الكل...",
+    "readMore": "اقرأ المزيد"
+  },
+  "resources": {
+    "comingSoon": "قريباً"
+  },
+  "contact": {
+    "sectionIntro": "نحن هنا للإجابة على أسئلتكم ومرافقتكم.",
+    "sectionHighlight": "لا تترددوا في مراسلتنا أو زيارتنا!",
+    "name": "الاسم",
+    "namePlaceholder": "مثال: محمد نصري",
+    "email": "البريد الإلكتروني (*)",
+    "emailPlaceholder": "مثال: nom.prenom@gmail.com",
+    "subject": "موضوع طلبكم (*)",
+    "subjectPlaceholder": "مثال: طلب معلومات حول الأنشطة؟",
+    "message": "الرسالة (*)",
+    "messagePlaceholder": "مثال: مرحباً، أود الحصول على مزيد من المعلومات حول الأنشطة المقترحة...",
+    "send": "إرسال",
+    "success": "تم إرسال رسالتكم بنجاح!",
+    "error": "حدث خطأ. يرجى المحاولة مرة أخرى."
+  },
+  "footer": {
+    "question": "سؤال أو فكرة؟",
+    "questionBody": "سواء كان ذلك لمعرفة المزيد عن صحة طفلكم، أو اكتشاف أنشطتنا، أو اقتراح شراكة أو تنظيم حدث صغير معنا، اكتبوا لنا! سنكون سعداء بالرد عليكم.",
+    "dept": "قسم الطب",
+    "university": "جامعة باتنة 2"
+  },
+  "common": {
+    "readMore": "اقرأ المزيد",
+    "seeAll": "عرض الكل...",
+    "comingSoon": "قريباً",
+    "home": "الرئيسية",
+    "backHome": "العودة للرئيسية",
+    "notFound": "الصفحة غير موجودة",
+    "notFoundText": "الصفحة التي تبحث عنها غير موجودة.",
+    "published": "نُشر في",
+    "by": "بقلم",
+    "location": "المكان",
+    "date": "التاريخ"
+  }
+}

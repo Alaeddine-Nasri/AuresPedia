@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply text-gray-800;
+  }
+}
+
+@layer utilities {
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(24px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in-up {
+    opacity: 0;
+    animation: fadeInUp 0.55s ease forwards;
+  }
+
+  .animate-delay-100 { animation-delay: 100ms; }
+  .animate-delay-200 { animation-delay: 200ms; }
+  .animate-delay-300 { animation-delay: 300ms; }
+  .animate-delay-400 { animation-delay: 400ms; }
+
+  @keyframes revealLTR {
+    from { clip-path: inset(0 100% 0 0); }
+    to   { clip-path: inset(0 0% 0 0); }
+  }
+
+  .news-reveal-ltr { animation: revealLTR 0.55s cubic-bezier(0.4, 0, 0.2, 1) forwards; }
+
+  @keyframes bounceRight {
+    0%, 100% { transform: translateX(0); }
+    50%       { transform: translateX(5px); }
+  }
+
+  .btn-read-more {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  .btn-read-more .arrow {
+    display: inline-block;
+    transition: transform 0.2s ease;
+  }
+
+  .btn-read-more:hover .arrow {
+    animation: bounceRight 0.5s ease infinite;
+  }
+
+  /* Anchor offset for sticky navbar */
+  [id] {
+    scroll-margin-top: 4.5rem;
+  }
+
+  .hide-scrollbar::-webkit-scrollbar { display: none; }
+  .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+  @keyframes floatUp {
+    0%   { transform: translateY(0); }
+    100% { transform: translateY(-105vh); }
+  }
+
+  @keyframes balloonFloat {
+    0%   { transform: translateY(0)      translateX(0);     opacity: 0;    }
+    6%   { opacity: 0.6; }
+    25%  { transform: translateY(-27vh)  translateX(10px);  }
+    50%  { transform: translateY(-55vh)  translateX(-8px);  }
+    75%  { transform: translateY(-80vh)  translateX(10px);  opacity: 0.6;  }
+    100% { transform: translateY(-110vh) translateX(0);     opacity: 0;    }
+  }
+
+  @keyframes orbDrift1 {
+    0%, 100% { transform: translate(0, 0); }
+    50%       { transform: translate(60px, -80px); }
+  }
+  @keyframes orbDrift2 {
+    0%, 100% { transform: translate(0, 0); }
+    50%       { transform: translate(-70px, 60px); }
+  }
+  @keyframes orbDrift3 {
+    0%, 100% { transform: translate(0, 0); }
+    50%       { transform: translate(50px, 70px); }
+  }
+  @keyframes orbDrift4 {
+    0%, 100% { transform: translate(0, 0); }
+    50%       { transform: translate(-50px, -60px); }
+  }
+}
