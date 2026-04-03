@@ -56,7 +56,7 @@ export default function HeroQuotes({ quotes = [] }) {
       {/* Quote */}
       <div className={`transition-opacity duration-400 ${visible ? 'opacity-100' : 'opacity-0'} flex-1`}>
         <p className="text-gray-700 text-[0.75rem] leading-relaxed text-justify font-medium">
-          <span className="text-primary text-4xl font-serif leading-none select-none align-bottom mr-0.5">"</span>{q.quote}
+          <span className="text-primary text-4xl font-serif leading-none select-none align-bottom mr-0.5">&ldquo;</span>{q.quote}
         </p>
         <div className="mt-5">
           <p className="font-bold text-dark text-xs">{q.author}</p>
