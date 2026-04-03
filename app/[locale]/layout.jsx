@@ -6,6 +6,8 @@ import FooterWrapper from '@/components/FooterWrapper'
 import BackgroundOrbs from '@/components/BackgroundOrbs'
 import BalloonsFloat from '@/components/BalloonsFloat'
 import { BalloonsProvider } from '@/components/BalloonsContext'
+import PageLoader from '@/components/PageLoader'
+import PageTransition from '@/components/PageTransition'
 import '@/app/globals.css'
 
 const manrope = Manrope({
@@ -71,11 +73,14 @@ export default async function LocaleLayout({ children, params: { locale } }) {
         suppressHydrationWarning
       >
         <NextIntlClientProvider messages={messages}>
+          <PageLoader />
           <BalloonsProvider>
             <BackgroundOrbs />
             <BalloonsFloat />
             <Navbar locale={locale} />
-            <main className="min-h-screen">{children}</main>
+            <main className="min-h-screen">
+            <PageTransition>{children}</PageTransition>
+          </main>
             <FooterWrapper />
           </BalloonsProvider>
         </NextIntlClientProvider>
