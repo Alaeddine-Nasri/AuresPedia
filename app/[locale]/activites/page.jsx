@@ -30,7 +30,7 @@ export default async function ActivitesPage({ params: { locale } }) {
     <>
       {/* ── Événement à venir ── */}
       <section className="container mx-auto px-4 py-12">
-        <h1 className="text-3xl font-bold text-dark text-center mb-8">
+        <h1 className="text-xl md:text-3xl font-bold text-dark text-center mb-8">
           {t('upcomingTitle')}
         </h1>
 
@@ -46,7 +46,7 @@ export default async function ActivitesPage({ params: { locale } }) {
       {/* ── Événements passés ── */}
       <section className="bg-neutral py-16">
         <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-dark text-center mb-10">
+        <h2 className="text-xl md:text-3xl font-bold text-dark text-center mb-10">
           {t('pastTitle')}
         </h2>
 

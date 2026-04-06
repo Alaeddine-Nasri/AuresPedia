@@ -153,7 +153,7 @@ export default async function HomePage({ params: { locale } }) {
 
           {/* Right — text + vision/mission */}
           <div className="flex-1 space-y-5">
-            <h2 className="text-4xl font-bold leading-tight text-dark">
+            <h2 className="text-2xl md:text-4xl font-bold leading-tight text-dark">
               {locale === 'ar'
                 ? <><span className="text-primary">من نحن</span> — أوريسبيديا</>
                 : <><span className="text-primary">À propos</span> de nous</>}

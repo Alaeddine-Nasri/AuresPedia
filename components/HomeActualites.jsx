@@ -51,10 +51,7 @@ export default function HomeActualites({ items, locale }) {
       {/* Green left panel — full bleed left */}
       <div className="flex-1 bg-primary flex items-stretch">
         {/* Inner content aligned to page width */}
-        <div
-          className="ml-auto w-full px-6 md:pl-8 md:pr-10 2xl:pr-16 py-8 md:py-12 2xl:py-16 flex flex-col justify-between"
-          style={{ maxWidth: 'clamp(320px, 45vw, 640px)' }}
-        >
+        <div className="w-full px-6 md:ml-auto md:pl-8 md:pr-10 2xl:pr-16 py-8 md:py-12 2xl:py-16 flex flex-col justify-between md:max-w-[640px]">
           <div className={`transition-opacity duration-400 ${visible ? 'opacity-100' : 'opacity-0'} flex flex-col gap-5 2xl:gap-7 flex-1`}>
             <h2 className="text-white text-2xl md:text-4xl 2xl:text-5xl font-bold">{locale === 'ar' ? 'الأخبار' : 'Actualités'}</h2>
 
