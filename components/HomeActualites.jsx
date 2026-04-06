@@ -46,23 +46,23 @@ export default function HomeActualites({ items, locale }) {
   const summary = getExcerpt(item.summary) || getExcerpt(item.body)
 
   return (
-    <div className="relative w-full flex" style={{ minHeight: 'clamp(480px, 48vw, 620px)' }}>
+    <div className="relative w-full flex flex-col md:flex-row" style={{ minHeight: 'clamp(320px, 48vw, 620px)' }}>
 
       {/* Green left panel — full bleed left */}
       <div className="flex-1 bg-primary flex items-stretch">
         {/* Inner content aligned to page width */}
         <div
-          className="ml-auto w-full pl-8 pr-10 2xl:pr-16 py-12 2xl:py-16 flex flex-col justify-between"
-          style={{ maxWidth: 'clamp(440px, 45vw, 640px)' }}
+          className="ml-auto w-full px-6 md:pl-8 md:pr-10 2xl:pr-16 py-8 md:py-12 2xl:py-16 flex flex-col justify-between"
+          style={{ maxWidth: 'clamp(320px, 45vw, 640px)' }}
         >
           <div className={`transition-opacity duration-400 ${visible ? 'opacity-100' : 'opacity-0'} flex flex-col gap-5 2xl:gap-7 flex-1`}>
-            <h2 className="text-white text-4xl 2xl:text-5xl font-bold">{locale === 'ar' ? 'الأخبار' : 'Actualités'}</h2>
+            <h2 className="text-white text-2xl md:text-4xl 2xl:text-5xl font-bold">{locale === 'ar' ? 'الأخبار' : 'Actualités'}</h2>
 
-            <div className="flex-1 flex flex-col justify-center gap-4 2xl:gap-6">
-              <h3 className="text-white text-3xl 2xl:text-4xl font-bold leading-snug">
+            <div className="flex-1 flex flex-col justify-center gap-3 md:gap-4 2xl:gap-6">
+              <h3 className="text-white text-xl md:text-3xl 2xl:text-4xl font-bold leading-snug">
                 {item.title}
               </h3>
-              <p className="text-white/90 text-lg 2xl:text-xl leading-relaxed text-justify line-clamp-5">
+              <p className="text-white/90 text-sm md:text-lg 2xl:text-xl leading-relaxed text-justify line-clamp-4 md:line-clamp-5">
                 {summary}
               </p>
               <p className="text-white/70 text-base 2xl:text-lg text-right">{formatDate(item.date, locale)}</p>
@@ -96,7 +96,7 @@ export default function HomeActualites({ items, locale }) {
       </div>
 
       {/* Photo right panel — full bleed right */}
-      <div className="flex-1 relative overflow-hidden">
+      <div className="flex-1 relative overflow-hidden min-h-52 md:min-h-0">
         <div className={`absolute inset-0 transition-opacity duration-500 ${visible ? 'opacity-100' : 'opacity-0'}`}>
           {item.image ? (
             <Image

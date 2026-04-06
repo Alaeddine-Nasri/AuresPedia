@@ -22,7 +22,7 @@ export default function TeamGrid({ members, btnLabel }) {
         </div>
       ) : (
         <>
-          <div className="grid grid-cols-3 gap-5 mt-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 mt-8">
             {visible.map((member, i) => (
               <TeamCard key={member._id} member={member} highlighted={i === 1} />
             ))}

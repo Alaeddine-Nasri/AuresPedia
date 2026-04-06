@@ -9,7 +9,11 @@ export function BalloonsProvider({ children }) {
 
   useEffect(() => {
     const saved = localStorage.getItem('balloons-enabled')
-    if (saved !== null) setEnabled(saved !== 'false')
+    if (saved !== null) {
+      setEnabled(saved !== 'false')
+    } else {
+      setEnabled(window.innerWidth >= 768)
+    }
   }, [])
 
   const toggle = () =>

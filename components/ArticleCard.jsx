@@ -102,10 +102,10 @@ export default function ArticleCard({
   if (variant === 'horizontal') {
     return (
       <article className="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-200 w-full">
-        <div className={`flex flex-col md:flex-row ${imageRight ? '' : 'md:flex-row-reverse'}`} style={{ minHeight: '420px' }}>
+        <div className={`flex flex-col md:flex-row ${imageRight ? '' : 'md:flex-row-reverse'}`}>
 
           {/* Text side */}
-          <div className="flex-1 px-12 py-12 flex flex-col justify-center min-w-0">
+          <div className="flex-1 px-6 py-8 md:px-12 md:py-12 flex flex-col justify-center min-w-0">
             <CategoryTag category={item.category} locale={locale} />
             <h2 className="text-2xl font-bold text-gray-900 mb-4 leading-snug">
               <HighlightTitle title={item.title} />

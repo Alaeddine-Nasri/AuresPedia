@@ -94,7 +94,7 @@ export default async function HomePage({ params: { locale } }) {
               />
             </div>
             {/* Floating quote card */}
-            <div className="absolute bottom-4 right-4 bg-white rounded-2xl shadow-xl p-4 w-72" style={{ minHeight: '140px' }}>
+            <div className="hidden sm:block absolute bottom-4 right-4 bg-white rounded-2xl shadow-xl p-4 w-72" style={{ minHeight: '140px' }}>
               <HeroQuotes quotes={config?.quotes || []} />
             </div>
           </div>
@@ -104,10 +104,10 @@ export default async function HomePage({ params: { locale } }) {
       {/* ── Mission separator ── */}
       <section className="bg-primary py-8 px-4">
         <div className="container mx-auto text-center space-y-1">
-          <p className="text-3xl font-bold text-dark leading-snug">
+          <p className="text-xl md:text-3xl font-bold text-dark leading-snug">
             👩‍⚕️ {locale === 'ar' ? 'من خلال تاريخنا وقيمنا,' : 'À travers notre histoire et nos valeurs,'}
           </p>
-          <p className="text-3xl font-bold text-white leading-snug">
+          <p className="text-xl md:text-3xl font-bold text-white leading-snug">
             {locale === 'ar'
               ? 'نضع صحة الطفل ورفاهيته في صميم كل أعمالنا.'
               : 'nous mettons la santé et le bien-être des enfants au cœur de toutes nos actions.'}
@@ -178,10 +178,10 @@ export default async function HomePage({ params: { locale } }) {
         <div className="container mx-auto">
           <div className="w-[88%] mx-auto">
             <div className="mb-8 text-center space-y-1">
-              <p className="text-3xl 2xl:text-4xl font-bold text-dark leading-snug">
+              <p className="text-xl md:text-3xl 2xl:text-4xl font-bold text-dark leading-snug">
                 🎯 {locale === 'ar' ? 'شاركوا في أنشطة ترفيهية وتعليمية' : 'Participez à des Activités ludiques et éducatives'}
               </p>
-              <p className="text-3xl 2xl:text-4xl font-bold text-primary leading-snug">
+              <p className="text-xl md:text-3xl 2xl:text-4xl font-bold text-primary leading-snug">
                 {locale === 'ar' ? 'مصممة لصحة الطفل وازدهاره.' : 'pensées pour le bien-être et l\'épanouissement des enfants.'}
               </p>
             </div>
@@ -211,10 +211,10 @@ export default async function HomePage({ params: { locale } }) {
       <section className="container mx-auto px-4 py-14 2xl:py-20">
         <div className="w-[88%] mx-auto">
           <div className="mb-8 text-center space-y-1">
-            <p className="text-3xl 2xl:text-4xl font-bold text-dark leading-snug">
+            <p className="text-xl md:text-3xl 2xl:text-4xl font-bold text-dark leading-snug">
               📗 {locale === 'ar' ? 'لأن المعلومة الجيدة ضرورية، اطلع على' : 'Parce qu\'une bonne information est essentielle, retrouvez ici des'}
             </p>
-            <p className="text-3xl 2xl:text-4xl font-bold text-primary leading-snug">
+            <p className="text-xl md:text-3xl 2xl:text-4xl font-bold text-primary leading-snug">
               {locale === 'ar' ? 'مقالات عملية حول صحة الطفل.' : 'Articles pratiques sur la santé infantile.'}
             </p>
           </div>

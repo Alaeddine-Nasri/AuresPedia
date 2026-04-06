@@ -8,7 +8,7 @@ export default function Footer() {
     <footer className="relative">
 
       {/* Floating contact info card — overlaps green section */}
-      <div className="absolute top-0 right-[6%] -translate-y-1/2 bg-white rounded-2xl shadow-xl border border-gray-100 p-5 w-64 space-y-3.5 z-10">
+      <div className="hidden md:block absolute top-0 right-[6%] -translate-y-1/2 bg-white rounded-2xl shadow-xl border border-gray-100 p-5 w-64 space-y-3.5 z-10">
         <ContactItem icon="phone" text="+213 7 44 47 99 99" href="tel:+213744479999" />
         <ContactItem icon="fax" text="+213 33 44 47 99" href="tel:+21333444799" />
         <ContactItem icon="mail" text="info@aurespedia.dz" href="mailto:info@aurespedia.dz" />
@@ -16,7 +16,7 @@ export default function Footer() {
       </div>
 
       {/* ── Green block ── */}
-      <div className="bg-primary pt-16 pb-10 px-4">
+      <div className="bg-primary pt-10 md:pt-16 pb-10 px-4">
         <div className="container mx-auto">
           <div className="w-[88%] mx-auto">
             <h3 className="text-white font-bold text-2xl mb-3 flex items-center gap-2">
@@ -26,6 +26,14 @@ export default function Footer() {
             <p className="text-white/85 text-sm leading-relaxed max-w-sm">
               {t('questionBody')}
             </p>
+
+            {/* Contact details — visible on mobile only (desktop uses floating card) */}
+            <div className="md:hidden mt-6 space-y-3 bg-white/10 rounded-2xl p-4">
+              <ContactItem icon="phone" text="+213 7 44 47 99 99" href="tel:+213744479999" light />
+              <ContactItem icon="fax" text="+213 33 44 47 99" href="tel:+21333444799" light />
+              <ContactItem icon="mail" text="info@aurespedia.dz" href="mailto:info@aurespedia.dz" light />
+              <ContactItem icon="pin" text="Faculté De médecine Batna, G5JP+JQG, Batna, Algérie" light />
+            </div>
           </div>
         </div>
       </div>
@@ -68,7 +76,7 @@ export default function Footer() {
   )
 }
 
-function ContactItem({ icon, text, href }) {
+function ContactItem({ icon, text, href, light = false }) {
   const icons = {
     phone: <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />,
     fax: <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />,
@@ -77,13 +85,13 @@ function ContactItem({ icon, text, href }) {
   }
 
   const content = (
-    <div className="flex items-start gap-3 text-dark">
-      <span className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
-        <svg className="w-4 h-4 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <div className={`flex items-start gap-3 ${light ? 'text-white' : 'text-dark'}`}>
+      <span className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 ${light ? 'bg-white/20' : 'bg-primary/10'}`}>
+        <svg className={`w-4 h-4 ${light ? 'text-white' : 'text-primary'}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
           {icons[icon]}
         </svg>
       </span>
-      <span className="text-sm leading-relaxed pt-1">{text}</span>
+      <span className={`text-sm leading-relaxed pt-1 ${light ? 'text-white/90' : ''}`}>{text}</span>
     </div>
   )
 

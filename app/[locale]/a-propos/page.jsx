@@ -69,10 +69,10 @@ export default async function AboutPage({ params: { locale } }) {
 
         {/* ── Quote ── */}
         <div className="w-[88%] mx-auto py-4 text-center space-y-1">
-          <p className="text-3xl 2xl:text-4xl font-bold text-dark leading-snug">
+          <p className="text-xl md:text-3xl 2xl:text-4xl font-bold text-dark leading-snug">
             🌿 {locale === 'ar' ? 'من خلال تاريخنا وقيمنا،' : 'À travers notre histoire et nos valeurs,'}
           </p>
-          <p className="text-3xl 2xl:text-4xl font-bold text-primary leading-snug">
+          <p className="text-xl md:text-3xl 2xl:text-4xl font-bold text-primary leading-snug">
             {locale === 'ar'
               ? 'نضع صحة الطفل ورفاهيته في صميم كل أعمالنا.'
               : 'nous mettons la santé et le bien-être des enfants au cœur de toutes nos actions.'}
@@ -80,7 +80,7 @@ export default async function AboutPage({ params: { locale } }) {
         </div>
 
         {/* ── Histoire Card ── */}
-        <div className="w-[88%] mx-auto bg-white rounded-2xl shadow-sm p-10 md:p-12 2xl:p-20">
+        <div className="w-[88%] mx-auto bg-white rounded-2xl shadow-sm p-5 md:p-12 2xl:p-20">
           <Breadcrumb
             items={[
               { label: tc('home'), href: `/${locale}` },
@@ -95,8 +95,8 @@ export default async function AboutPage({ params: { locale } }) {
             <div className="flex-1 flex flex-col gap-6">
 
               {/* Row: small image + title */}
-              <div className="flex items-start gap-5">
-                <div className="relative w-52 h-52 2xl:w-64 2xl:h-64 flex-shrink-0 rounded-xl overflow-hidden bg-neutral">
+              <div className="flex flex-col sm:flex-row items-start gap-5">
+                <div className="relative w-full sm:w-52 h-52 2xl:w-64 2xl:h-64 flex-shrink-0 rounded-xl overflow-hidden bg-neutral">
                   <Image
                     src="/images/history-building.jpg"
                     alt="Faculté de Médecine – Université Batna 2"
@@ -131,13 +131,13 @@ export default async function AboutPage({ params: { locale } }) {
               </p>
 
               {/* Row: text + fading image */}
-              <div className="flex items-start gap-5">
+              <div className="flex flex-col sm:flex-row items-start gap-5">
                 <p className="flex-1 text-gray-500 text-[0.9375rem] 2xl:text-lg leading-relaxed text-justify">
                   {locale === 'ar'
                     ? 'نسعى من خلال أوريسبيديا إلى بناء جسر بين المعرفة الطبية الأكاديمية والعائلة الجزائرية، مع الحفاظ على الهوية المحلية والبيئة الثقافية لمنطقة الأوراس. هدفنا أن تكون الموارد الطبية الموثوقة في متناول الجميع.'
                     : "À travers AuresPédia, nous cherchons à construire un pont entre la connaissance médicale académique et la famille algérienne, tout en préservant l'identité locale et le contexte culturel de la région des Aurès. Notre ambition est de rendre les ressources médicales fiables accessibles à tous."}
                 </p>
-                <div className="relative w-56 h-48 2xl:w-64 2xl:h-56 flex-shrink-0 rounded-xl overflow-hidden bg-neutral">
+                <div className="relative w-full sm:w-56 h-48 2xl:w-64 2xl:h-56 flex-shrink-0 rounded-xl overflow-hidden bg-neutral">
                   <FadingImage
                     images={['/images/history-lecture.jpg', '/images/history-library.jpg']}
                     alt="Activités pédagogiques"
@@ -151,7 +151,7 @@ export default async function AboutPage({ params: { locale } }) {
         </div>
 
         {/* ── Team Card ── */}
-        <div className="w-[88%] mx-auto bg-white rounded-2xl shadow-sm p-10 md:p-14">
+        <div className="w-[88%] mx-auto bg-white rounded-2xl shadow-sm p-5 md:p-14">
           <Breadcrumb
             items={[
               { label: tc('home'), href: `/${locale}` },
