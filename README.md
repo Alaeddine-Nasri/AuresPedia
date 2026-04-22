@@ -6,7 +6,7 @@
 
 ## Overview
 
-![AuresPédia Hero — Landing page screenshot](./public/images/hero-home.jpg)
+![AuresPédia Hero — Landing page screenshot](./screenshots/landing.png)
 
 AuresPédia is a full-stack content-driven web application serving as the official digital presence of the CHU Batna 2 pediatrics department. It provides medical articles, department news, event listings, team profiles, and a contact channel — all in a clean, professional interface optimized for both LTR (French) and RTL (Arabic) reading.
 
