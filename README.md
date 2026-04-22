@@ -44,23 +44,23 @@ This project was designed and built from the ground up — architecture, UI, con
 ## Screenshots
 
 ### Landing Page
-![Landing page — hero section with doctor image and quote card](./public/images/hero-home.jpg)
+![Landing page — hero section with doctor image and quote card](.screenshots/landing.png)
 
 ---
 
-### Medical Articles
-![Article listing page](./public/images/article-fievre.png)
+### Medical Actualities
+![Article listing page](.screenshots/actualite.png)
 
 ---
 
 ### Department Activities
-![Activity cards — workshops and conferences](./public/images/activite-conference.png)
+![Activity cards — workshops and conferences](.screenshots/about.png)
 
 ---
 
 ### Team Section
-<!-- 📸 PLACE SCREENSHOT: Team page with doctor profile cards -->
-> `screenshots/team-page.png`
+![Activity cards — team](.screenshots/team.png)
+
 
 ---
 
@@ -71,8 +71,7 @@ This project was designed and built from the ground up — architecture, UI, con
 ---
 
 ### Sanity Studio (CMS)
-<!-- 📸 PLACE SCREENSHOT: Sanity Studio dashboard with content schemas -->
-> `screenshots/sanity-studio.png`
+![Activity cards — history](.screenshots/hisotry.png)
 
 ---
 
